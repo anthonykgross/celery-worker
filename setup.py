@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="celery-worker",
-    version='0.0.1',
+    version='0.0.2',
     author="Anthony K GROSS",
     author_email="anthony.k.gross@gmail.com",
     description="A Simple celery worker",

@@ -14,7 +14,7 @@ class CeleryWorker(object):
         self.__instance.tasks.register(task)
 
     def start(self):
-        self.__instance.start(argv=['celery', 'worker', '--beat', '--concurrency', '4', '-l', 'info'])
+        self.__instance.start(argv=['celery', 'worker', '--beat', '-l', 'info'])
 
     def purge(self):
         self.__instance.start(argv=['celery', 'purge', '-f'])

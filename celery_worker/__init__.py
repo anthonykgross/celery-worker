@@ -2,12 +2,8 @@ from celery import Celery
 
 
 class CeleryWorker(object):
-    def __init__(self, name, broker, backend, conf):
-        self.__instance = Celery(
-            name,
-            broker=broker,
-            backend=backend
-        )
+    def __init__(self, name, conf):
+        self.__instance = Celery(name)
         self.__instance.conf.update(conf)
 
     def register(self, task):

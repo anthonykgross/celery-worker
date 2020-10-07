@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="celery-worker",
-    version='0.0.3',
+    version='0.0.6',
     author="Anthony K GROSS",
     author_email="anthony.k.gross@gmail.com",
     description="A Simple celery worker",
@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        "celery>=4.3.0"
+        "celery==4.4.5"
     ]
 )

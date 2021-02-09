@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        "celery==4.4.5"
+        "celery==5.0.5"
     ]
 )
